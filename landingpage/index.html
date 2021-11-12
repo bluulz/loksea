@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css" type="text/css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Archivo+Narrow&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!--<div class="po-container">
+        <i class="fas fa-globe"></i><h3>POD</h3>
+        <div class="po-container-content">
+            
+            
+        </div>
+    </div>-->   
+
+
+    
+		<!-- All Content Container -->
+		<div class="all-content">
+			<!-- Logo with title -->
+			<div class="title-container">
+				<img src="logo.svg" alt="logo">
+			</div>
+
+			<!-- Image Container -->
+			<div class="po-container-content-transparent">
+				<div class="image-container">
+					<img class="imagenportada" src="image-host-desktop.jpg" alt="host">
+				
+				</div>
+			</div>
+
+			<!-- Main Container -->
+			<div class="main-container">
+				<h1 class="color-title">PUBLISH YOUR PODCASTS</h1>
+				<h1>EVERYWHERE.</h1>
+				<p>
+					Upload you audio to Pod with a single click. We'll<br>
+					then distribute your podcast to Spotify, Apple<br>
+					Podcasts, Google Podcasts, Pocket Casts and more!
+				</p>
+				<!-- Email Form -->
+				<form>
+					<input class="email" type="email" id="esto" placeholder="Email address" required="">
+					<div class="btn-container">
+						<input type="submit" name="boton" id="botoncito" class="btn" value="Request Access" onclick="comprobar()">
+					</div>
+					<br><br>
+					<span class="alerta" id="alerta">Debe rellenar este campo.</span>
+				</form>
+				<br>
+				<br>
+
+				<!-- SVG podcast icons -->
+				<div class="svg-icons">
+					<img class="imagenesiconos" src="spotify.svg" alt="spotify podcasts">
+					<img class="imagenesiconos" src="apple-podcast.svg" alt="apple podcasts">
+					<img class="imagenesiconos" src="google-podcasts.svg" alt="google podcasts">
+					<img class="imagenesiconos" src="pocket-casts.svg" alt="pocket casts">
+				</div>
+			</div>
+			<!-- Dots Image -->
+			<div class="dot-img">
+				<img src="images/bg-pattern-dots.svg" alt="">
+			</div>
+		</div>
+	
+
+
+		<script>
+			var esconder = document.getElementById("botoncito");
+			var email = document.getElementById("esto");
+			var span = document.getElementById("alerta");
+
+			function comprobar(){
+				if (email.value.length == 0){
+					span.style.display = "block";
+				}
+				else{
+					span.style.display = "none";
+				}
+			}
+		</script>
+</body>
+</html>
